@@ -6,6 +6,8 @@
     --slate: #434455;
     --cloud: #F4F4FD;
     --cornnflower: #E7E9FC;
+    --grey: rgba(46, 47, 66, 0.70);
+    --light-slate: #8E8F99;
 }
 
 /* global style */
@@ -149,7 +151,11 @@ img {
 /* Section-1 */
 
 .main-wrapper {
-    background-color: var(--navyblue);
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
+        url(../images/hero_bgi.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 188px 0 188px;
 }
 
@@ -359,4 +365,10 @@ img {
     line-height: 1.5;
     margin: 0;
     max-width: 264px;
+}
+
+.value-icons {
+    background: var(--cloud);
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
 }
