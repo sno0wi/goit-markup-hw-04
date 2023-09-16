@@ -125,11 +125,11 @@ p {
     padding: 24px 0;
 }
 
-.nav-item:nth-child(1) a {
+.nav-item.active a {
     color: var(--ocean);
 }
 
-.nav-item:nth-child(1)::after {
+.nav-item.active a::after {
     position: absolute;
     content: "";
     bottom: -1px;
