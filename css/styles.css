@@ -129,14 +129,14 @@ p {
     color: var(--ocean);
 }
 
-.nav-item::after {
+.nav-item:nth-child(1)::after {
     position: absolute;
     content: "";
-    bottom: -20px;
+    bottom: -1px;
     left: 0;
     width: 48px;
     height: 4px;
-    background-color: var(--iris);
+    background-color: var(--ocean);
     border-radius: 2px;
 }
 
@@ -471,10 +471,12 @@ p {
 
 .footer-inner {
     display: flex;
-    gap: 120px;
     align-items: baseline;
 }
 
+.footer_first-block {
+    margin-right: 120px;
+}
 
 .footer-logo {
     color: var(--iris);
@@ -508,6 +510,9 @@ p {
 .footer-social-title {
     color: var(--white);
     margin-bottom: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+
 }
 
 .footer-social-list {
