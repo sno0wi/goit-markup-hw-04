@@ -114,16 +114,6 @@ p {
     position: relative;
 }
 
-.nav-item.active::after {
-    position: absolute;
-    content: "";
-    bottom: -20px;
-    left: 0;
-    width: 48px;
-    height: 4px;
-    background-color: var(--iris);
-    border-radius: 2px;
-}
 
 
 .nav-link {
@@ -135,6 +125,20 @@ p {
     padding: 24px 0;
 }
 
+.nav-item:nth-child(1) a {
+    color: var(--ocean);
+}
+
+.nav-item:nth-child(1)::after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    width: 48px;
+    height: 4px;
+    background-color: var(--iris);
+    border-radius: 2px;
+}
 
 .nav-link:focus {
     color: var(--ocean);
