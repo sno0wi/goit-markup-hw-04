@@ -469,15 +469,12 @@ p {
     padding: 100px 0 100px;
 }
 
-.fooner-inner {
+.footer-inner {
     display: flex;
     gap: 120px;
+    align-items: baseline;
 }
 
-.footer-content {
-    display: flex;
-    gap: 120px;
-}
 
 .footer-logo {
     color: var(--iris);
