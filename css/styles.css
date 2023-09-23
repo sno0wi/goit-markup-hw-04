@@ -777,22 +777,22 @@ p {
     font-size: 12px;
 }
 
-.modal-checkbox-icon-check {
-    display: none;
+.modal-checkbox-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 16px;
+    max-height: 16px;
+    border: 1px solid var(--navy-blue-modal);
+    border-radius: 3px;
 }
 
-.modal-checkbox-icon-uncheck {
-    fill: var(--white);
-    stroke-width: 1px;
-    stroke: var(--navy-blue-modal);
+.modal-checkbox-icon {
+    opacity: 0;
 }
 
-.modal-checkbox-input:checked+.modal-checkbox-check .modal-checkbox-icon-uncheck {
-    display: none;
-}
-
-.modal-checkbox-input:checked+.modal-checkbox-check .modal-checkbox-icon-check {
-    display: block;
+.modal-checkbox-input:checked+.modal-checkbox-check .modal-checkbox-icon {
+    opacity: 1;
 }
 
 .modal-button {
